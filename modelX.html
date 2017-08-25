@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script src="js/proba.js"></script>
-<script src="js/custom1.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <title>Tesla - Model X</title>
@@ -207,9 +205,10 @@
 
       </div>
 <script src="js/proba.js"></script>
-<script src="js/scroll.js"></script>
-<script src="js/slider.js"></script>
-<script src="js/dropdown.js"></script>
+<script>$(document).ready(function() {$("body").css("display", "none");$("body").fadeIn(1000);$("a.transition").click(function(event){event.preventDefault();linkLocation = this.href;$("body").fadeOut(1000, redirectPage);});function redirectPage() {window.location = linkLocation;}});</script>    
+<script>$(document).ready(function(){$("a").on('click',function(event){if(this.hash!==""){event.preventDefault();var hash=this.hash;$('html, body').animate({scrollTop:$(hash).offset().top},800,function(){window.location.hash=hash;});}});});</script>
+<script >var slideIndex = 1;showSlides(slideIndex);function plusSlides(n){showSlides(slideIndex += n);}function currentSlide(n) {showSlides(slideIndex = n);}function showSlides(n) {var i;var slides = document.getElementsByClassName("mySlides");var dots = document.getElementsByClassName("dot");if (n > slides.length){slideIndex = 1}if (n < 1){slideIndex = slides.length}for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active", "");}slides[slideIndex-1].style.display = "block";dots[slideIndex-1].className += " active";}</script>
+<script >$(".toggle, ").click(function(){$(".show").slideToggle("fast");});</script>
 </body>
 
 
