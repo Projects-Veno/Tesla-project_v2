@@ -6,7 +6,6 @@
 <title>Tesla Motors</title>
 <link href="stil1.css" rel="stylesheet" type="text/css" />
 <script src="js/proba.js"></script>
-<script src="js/custom.js"></script>
 </head>
 <body id="povezivanje">
 <header >
@@ -145,9 +144,10 @@
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
 </div>
-<script src="js/scroll.js"></script>
-<script src="js/preloader.js">  </script>
-<script src="js/dropdown.js"></script>
+<script>$(document).ready(function(){$("a").on('click',function(event){if(this.hash!==""){event.preventDefault();var hash=this.hash;$('html, body').animate({scrollTop:$(hash).offset().top},800,function(){window.location.hash=hash;});}});});</script>
+<script> $(document).ready(function(){setTimeout(function(){$('body').addClass('loaded');},2000);}); </script>
+<script>$(".toggle, ").click(function(){$(".show").slideToggle("fast");});</script>
+<script> $(document).ready(function(){$("body").css("display","none");$("body").fadeIn(2000);$("a.transition").click(function(event){event.preventDefault();linkLocation=this.href;$("body").fadeOut(1000,redirectPage);});function redirectPage(){window.location=linkLocation;}});</script>	
 
 
 </body>
