@@ -365,6 +365,7 @@ nav a:hover {
 }
 .video-autopilot {
 	border: 3px solid white;
+	width:100%;
 }
 
 #range {
@@ -454,7 +455,7 @@ background-color: rgba(0, 0, 0, 0.4);
 }
 
 #autopilot .pozadina {
-	width:50%;
+	width:45%;
 }
 #autopilot .video-autopilot {
 	width: 50%;
